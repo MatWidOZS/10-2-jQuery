@@ -1,0 +1,5 @@
+* { box-sizing: border-box; }
+
+div { margin-left: 10px; }
+
+div:first-of-type { margin-top: 10px; }
