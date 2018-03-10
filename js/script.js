@@ -14,16 +14,19 @@
 //Pick every second span
 $(function() {
 	$('span:even').css('color', 'red');
-});
 
-//Add buttons to each parahraph
-$(function() {
 
+	//Add buttons to each parahraph
 	var paragraphs = $('p');
 	paragraphs.each(function(index, element) {
 		
 		var button = '<button class="btn" data-tmp=" ' + index + ' ">Click me</button>';
 		$(element).append(button);
 	
+	});
+
+	//Add event handler
+	$('button').click(function() {
+		alert($(this).attr('data-tmp'));
 	});
 });
